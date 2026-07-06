@@ -99,6 +99,10 @@
     }
     .hero-left {
       background: linear-gradient(135deg, #3d1f1a 0%, #2d1510 100%);
+      background-image: url('hero-bg.png'), linear-gradient(135deg, #3d1f1a 0%, #2d1510 100%);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       display: flex; flex-direction: column; justify-content: center;
       padding: 8rem 5rem 5rem;
       position: relative; overflow: hidden;
@@ -106,7 +110,7 @@
     .hero-left::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 20% 80%, rgba(232,180,184,0.15) 0%, transparent 60%);
+      background: linear-gradient(135deg, rgba(61,31,26,0.92) 0%, rgba(45,21,16,0.92) 100%), radial-gradient(ellipse at 20% 80%, rgba(232,180,184,0.15) 0%, transparent 60%);
     }
     .hero-tag {
       font-size: 0.65rem; letter-spacing: 0.45em; text-transform: uppercase;
