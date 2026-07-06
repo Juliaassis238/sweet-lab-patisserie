@@ -14,6 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:wght@200;300;400;500&display=swap" rel="stylesheet" />
 
   <style>
+  img { opacity: 0; transition: opacity 0.5s ease-in; }
+  img.loaded { opacity: 1; }
+
     :root {
       --rose: #e8b4b8;
       --rose-dark: #c98a90;
@@ -493,7 +496,7 @@
       </div>
     </div>
     <div class="hero-right">
-      <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=1200&q=90" alt="Sweet Lab Pâtisserie" />
+      <img decoding="async" fetchpriority="high" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=1200&q=90" alt="Sweet Lab Pâtisserie" />
       <div class="hero-badge">
         <strong>8</strong>
         <span>Anos de Paixão</span>
@@ -505,8 +508,8 @@
   <section>
     <div class="section-about">
       <div class="about-visual reveal">
-        <img class="about-img-a" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=85" alt="Sweet Lab" />
-        <img class="about-img-b" src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=500&q=85" alt="Detalhe confeitaria" />
+        <img decoding="async" fetchpriority="high" class="about-img-a" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=85" alt="Sweet Lab" />
+        <img decoding="async" loading="lazy" class="about-img-b" src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=500&q=85" alt="Detalhe confeitaria" />
       </div>
       <div class="about-text reveal reveal-delay-2">
         <span class="label-tag">Nossa Essência</span>
@@ -536,7 +539,7 @@
     <div class="menu-grid">
       <div class="menu-card reveal">
         <div class="menu-img-wrap">
-          <img class="menu-img" src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=400&q=85" alt="Macaron" />
+          <img decoding="async" loading="lazy" class="menu-img" src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=400&q=85" alt="Macaron" />
         </div>
         <div class="menu-info">
           <div class="menu-category">Clássicos</div>
@@ -547,7 +550,7 @@
       </div>
       <div class="menu-card reveal reveal-delay-1">
         <div class="menu-img-wrap">
-          <img class="menu-img" src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&q=85" alt="Entremet" />
+          <img decoding="async" loading="lazy" class="menu-img" src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&q=85" alt="Entremet" />
         </div>
         <div class="menu-info">
           <div class="menu-category">Alta Confeitaria</div>
@@ -558,7 +561,7 @@
       </div>
       <div class="menu-card reveal reveal-delay-2">
         <div class="menu-img-wrap">
-          <img class="menu-img" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=85" alt="Croissant" />
+          <img decoding="async" loading="lazy" class="menu-img" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=85" alt="Croissant" />
         </div>
         <div class="menu-info">
           <div class="menu-category">Viennoiserie</div>
@@ -569,7 +572,7 @@
       </div>
       <div class="menu-card reveal reveal-delay-3">
         <div class="menu-img-wrap">
-          <img class="menu-img" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=85" alt="Tarte" />
+          <img decoding="async" loading="lazy" class="menu-img" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=85" alt="Tarte" />
         </div>
         <div class="menu-info">
           <div class="menu-category">Tartes</div>
@@ -589,31 +592,31 @@
     </div>
     <div class="gallery-masonry">
       <div class="g-item reveal">
-        <img class="g-img" src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80" alt="Bolo artístico" />
+        <img decoding="async" loading="lazy" class="g-img" src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&q=80" alt="Bolo artístico" />
         <div class="g-overlay"><span class="g-label">Bolo de Casamento</span></div>
       </div>
       <div class="g-item reveal reveal-delay-1">
-        <img class="g-img" src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=500&q=80" alt="Doces finos" />
+        <img decoding="async" loading="lazy" class="g-img" src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=500&q=80" alt="Doces finos" />
         <div class="g-overlay"><span class="g-label">Doces Finos</span></div>
       </div>
       <div class="g-item reveal reveal-delay-2">
-        <img class="g-img" src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&q=80" alt="Petit fours" />
+        <img decoding="async" loading="lazy" class="g-img" src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=500&q=80" alt="Petit fours" />
         <div class="g-overlay"><span class="g-label">Petit Fours</span></div>
       </div>
       <div class="g-item reveal reveal-delay-1">
-        <img class="g-img" src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=500&q=80" alt="Chocolate" />
+        <img decoding="async" loading="lazy" class="g-img" src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=500&q=80" alt="Chocolate" />
         <div class="g-overlay"><span class="g-label">Chocolateria</span></div>
       </div>
       <div class="g-item reveal">
-        <img class="g-img" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=80" alt="Bolos" />
+        <img decoding="async" loading="lazy" class="g-img" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=80" alt="Bolos" />
         <div class="g-overlay"><span class="g-label">Bolos Artísticos</span></div>
       </div>
       <div class="g-item reveal reveal-delay-2">
-        <img class="g-img" src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=500&q=80" alt="Sobremesas" />
+        <img decoding="async" loading="lazy" class="g-img" src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=500&q=80" alt="Sobremesas" />
         <div class="g-overlay"><span class="g-label">Sobremesas</span></div>
       </div>
       <div class="g-item reveal reveal-delay-1">
-        <img class="g-img" src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?w=500&q=80" alt="Confeitaria" />
+        <img decoding="async" loading="lazy" class="g-img" src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?w=500&q=80" alt="Confeitaria" />
         <div class="g-overlay"><span class="g-label">Mesa Gourmet</span></div>
       </div>
     </div>
@@ -632,7 +635,7 @@
         </div>
         <p class="testimonial-text">"O bolo do nosso casamento foi absolutamente perfeito. A equipe do Sweet Lab transformou nossa visão em algo que superou todos os sonhos. Cada convidado ficou encantado."</p>
         <div class="testimonial-author">
-          <img class="author-img" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Cliente" />
+          <img decoding="async" loading="lazy" class="author-img" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Cliente" />
           <div>
             <div class="author-name">Fernanda & Rafael Souza</div>
             <div class="author-role">Casamento, Dezembro 2023</div>
@@ -645,7 +648,7 @@
         </div>
         <p class="testimonial-text">"Os macarons são simplesmente os melhores que já provei fora da França. Qualidade incomparável, apresentação impecável, entrega pontual. Já faço encomendas mensais."</p>
         <div class="testimonial-author">
-          <img class="author-img" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Cliente" />
+          <img decoding="async" loading="lazy" class="author-img" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Cliente" />
           <div>
             <div class="author-name">Isabela Martins</div>
             <div class="author-role">Cliente fiel desde 2020</div>
@@ -658,7 +661,7 @@
         </div>
         <p class="testimonial-text">"Contratei o Sweet Lab para o aniversário de 15 anos da minha filha. A mesa de doces foi um espetáculo à parte — arte e sabor em perfeita harmonia. Recomendo a todos."</p>
         <div class="testimonial-author">
-          <img class="author-img" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80" alt="Cliente" />
+          <img decoding="async" loading="lazy" class="author-img" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80" alt="Cliente" />
           <div>
             <div class="author-name">Cláudia Rezende</div>
             <div class="author-role">Evento Especial, 2024</div>
@@ -671,7 +674,7 @@
   <!-- ENCOMENDAS -->
   <section class="section-orders" id="encomendas">
     <div class="reveal">
-      <img class="orders-img" src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=800&q=85" alt="Encomendas Sweet Lab" />
+      <img decoding="async" loading="lazy" class="orders-img" src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=800&q=85" alt="Encomendas Sweet Lab" />
     </div>
     <div class="reveal reveal-delay-2">
       <span class="label-tag">Solicite sua Encomenda</span>
@@ -712,12 +715,12 @@
     <span class="instagram-handle">@sweetlabpatisserie</span>
     <span class="instagram-sub">Siga-nos e inspire-se diariamente</span>
     <div class="instagram-grid">
-      <div class="insta-item"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
-      <div class="insta-item"><img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
-      <div class="insta-item"><img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
-      <div class="insta-item"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
-      <div class="insta-item"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
-      <div class="insta-item"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
+      <div class="insta-item"><img decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
+      <div class="insta-item"><img decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
+      <div class="insta-item"><img decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
+      <div class="insta-item"><img decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
+      <div class="insta-item"><img decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
+      <div class="insta-item"><img decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&q=80" alt=""/><div class="insta-overlay"><span class="insta-plus">+</span></div></div>
     </div>
   </section>
 
@@ -771,5 +774,18 @@
     const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
   </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    if (img.complete) {
+      img.classList.add('loaded');
+    } else {
+      img.addEventListener('load', () => img.classList.add('loaded'));
+    }
+  });
+});
+</script>
 </body>
 </html>
